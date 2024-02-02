@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.identify("9f1e8468-8bd7-4950-9a97-7e691cca4b7a",{name:"User"});
+    posthog.capture("report_feature",{karate_version:"1.3.1",karate_meta:null});
+  }
+});
+</script>
+
+    <title>src.test.java.apitesting.query_parameter</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">2</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2024-02-01 02:39:26 pm</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:2]"><span>[1:2]</span> <span>get all active users &amp; some specific</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2:12]"><span>[2:12]</span> <span>Get all the inactive users and users count</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">src/test/java/apitesting/query_parameter.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Get api with query parameter</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:2]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:2]</span>
+                <span class="scenario-name">get all active users &amp; some specific</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>1896</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.3">
+      <div class="step-ref passed">3</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def query = {status:&#39;active&#39;, gender:&#39;female&#39;}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">64</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref passed">4</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &quot;https://gorest.co.in/public/v1/users&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">89</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref passed">5</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>params query</span>
+      </div>
+    </div>
+    <div class="time-cell passed">31</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref passed">6</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1639</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.6">14:39:23.987 request:
+1 &gt; GET https://gorest.co.in/public/v1/users?gender=female&amp;status=active
+1 &gt; Host: gorest.co.in
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/17.0.9)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+14:39:25.360 response time in milliseconds: 1369
+1 &lt; 200
+1 &lt; Date: Thu, 01 Feb 2024 09:09:22 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Cache-Control: max-age=0, private, must-revalidate
+1 &lt; etag: W/&quot;94787e4332c16884acfa4bf84c5456f6&quot;
+1 &lt; referrer-policy: strict-origin-when-cross-origin
+1 &lt; vary: Origin
+1 &lt; x-content-type-options: nosniff
+1 &lt; x-download-options: noopen
+1 &lt; x-frame-options: SAMEORIGIN
+1 &lt; x-permitted-cross-domain-policies: none
+1 &lt; x-request-id: c1e7bbbc-2abe-42ad-a22b-f48a12d287bc
+1 &lt; x-runtime: 0.073007
+1 &lt; x-xss-protection: 0
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=pEEbuZAAH5%2BUj1KJlbskuiaTzNIsjKbaJ2zv70qsHjtMVasI5sM4lyfa55E8xrKRVKxmt10UGE7nKfFd3ttdT2V6slMz6swb1LIkYUJW4lJr4X7K4ofjWF5k%2FHXsaS0%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 84e90e2028310d82-MRS
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
+{&quot;meta&quot;:{&quot;pagination&quot;:{&quot;total&quot;:701,&quot;pages&quot;:71,&quot;page&quot;:1,&quot;limit&quot;:10,&quot;links&quot;:{&quot;previous&quot;:null,&quot;current&quot;:&quot;https://gorest.co.in/public/v1/users?page=1&quot;,&quot;next&quot;:&quot;https://gorest.co.in/public/v1/users?page=2&quot;}}},&quot;data&quot;:[{&quot;id&quot;:6129714,&quot;name&quot;:&quot;Darshwana Adiga&quot;,&quot;email&quot;:&quot;darshwana_adiga@walsh-blanda.test&quot;,&quot;gender&quot;:&quot;female&quot;,&quot;status&quot;:&quot;active&quot;},{&quot;id&quot;:6129479,&quot;name&quot;:&quot;Gorakhanatha Nehru&quot;,&quot;email&quot;:&quot;nehru_gorakhanatha@welch.test&quot;,&quot;gender&quot;:&quot;female&quot;,&quot;status&quot;:&quot;active&quot;},{&quot;id&quot;:6129473,&quot;name&quot;:&quot;Kumuda Bandopadhyay&quot;,&quot;email&quot;:&quot;bandopadhyay_kumuda@rice.example&quot;,&quot;gender&quot;:&quot;female&quot;,&quot;status&quot;:&quot;active&quot;},{&quot;id&quot;:6129472,&quot;name&quot;:&quot;Durga Sharma&quot;,&quot;email&quot;:&quot;durga_sharma@emard-trantow.example&quot;,&quot;gender&quot;:&quot;female&quot;,&quot;status&quot;:&quot;active&quot;},{&quot;id&quot;:6129471,&quot;name&quot;:&quot;Bhupati Kapoor&quot;,&quot;email&quot;:&quot;kapoor_bhupati@bailey.example&quot;,&quot;gender&quot;:&quot;female&quot;,&quot;status&quot;:&quot;active&quot;},{&quot;id&quot;:6129469,&quot;name&quot;:&quot;Adheesh Varma&quot;,&quot;email&quot;:&quot;adheesh_varma@bashirian.test&quot;,&quot;gender&quot;:&quot;female&quot;,&quot;status&quot;:&quot;active&quot;},{&quot;id&quot;:6129468,&quot;name&quot;:&quot;Gorakhnath Chattopadhyay&quot;,&quot;email&quot;:&quot;chattopadhyay_gorakhnath@kilback.example&quot;,&quot;gender&quot;:&quot;female&quot;,&quot;status&quot;:&quot;active&quot;},{&quot;id&quot;:6129467,&quot;name&quot;:&quot;Kalpana Bharadwaj DDS&quot;,&quot;email&quot;:&quot;kalpana_dds_bharadwaj@abernathy.test&quot;,&quot;gender&quot;:&quot;female&quot;,&quot;status&quot;:&quot;active&quot;},{&quot;id&quot;:6129464,&quot;name&quot;:&quot;The Hon. Dayaanidhi Namboothiri&quot;,&quot;email&quot;:&quot;dayaanidhi_hon_namboothiri_the@bernhard.test&quot;,&quot;gender&quot;:&quot;female&quot;,&quot;status&quot;:&quot;active&quot;},{&quot;id&quot;:6129462,&quot;name&quot;:&quot;Kama Pillai&quot;,&quot;email&quot;:&quot;kama_pillai@mcdermott-zieme.test&quot;,&quot;gender&quot;:&quot;female&quot;,&quot;status&quot;:&quot;active&quot;}]}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref passed">7</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref passed">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">66</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.8">14:39:25.432 [print] {
+  &quot;meta&quot;: {
+    &quot;pagination&quot;: {
+      &quot;total&quot;: 701,
+      &quot;pages&quot;: 71,
+      &quot;page&quot;: 1,
+      &quot;limit&quot;: 10,
+      &quot;links&quot;: {
+        &quot;previous&quot;: null,
+        &quot;current&quot;: &quot;https://gorest.co.in/public/v1/users?page=1&quot;,
+        &quot;next&quot;: &quot;https://gorest.co.in/public/v1/users?page=2&quot;
+      }
+    }
+  },
+  &quot;data&quot;: [
+    {
+      &quot;id&quot;: 6129714,
+      &quot;name&quot;: &quot;Darshwana Adiga&quot;,
+      &quot;email&quot;: &quot;darshwana_adiga@walsh-blanda.test&quot;,
+      &quot;gender&quot;: &quot;female&quot;,
+      &quot;status&quot;: &quot;active&quot;
+    },
+    {
+      &quot;id&quot;: 6129479,
+      &quot;name&quot;: &quot;Gorakhanatha Nehru&quot;,
+      &quot;email&quot;: &quot;nehru_gorakhanatha@welch.test&quot;,
+      &quot;gender&quot;: &quot;female&quot;,
+      &quot;status&quot;: &quot;active&quot;
+    },
+    {
+      &quot;id&quot;: 6129473,
+      &quot;name&quot;: &quot;Kumuda Bandopadhyay&quot;,
+      &quot;email&quot;: &quot;bandopadhyay_kumuda@rice.example&quot;,
+      &quot;gender&quot;: &quot;female&quot;,
+      &quot;status&quot;: &quot;active&quot;
+    },
+    {
+      &quot;id&quot;: 6129472,
+      &quot;name&quot;: &quot;Durga Sharma&quot;,
+      &quot;email&quot;: &quot;durga_sharma@emard-trantow.example&quot;,
+      &quot;gender&quot;: &quot;female&quot;,
+      &quot;status&quot;: &quot;active&quot;
+    },
+    {
+      &quot;id&quot;: 6129471,
+      &quot;name&quot;: &quot;Bhupati Kapoor&quot;,
+      &quot;email&quot;: &quot;kapoor_bhupati@bailey.example&quot;,
+      &quot;gender&quot;: &quot;female&quot;,
+      &quot;status&quot;: &quot;active&quot;
+    },
+    {
+      &quot;id&quot;: 6129469,
+      &quot;name&quot;: &quot;Adheesh Varma&quot;,
+      &quot;email&quot;: &quot;adheesh_varma@bashirian.test&quot;,
+      &quot;gender&quot;: &quot;female&quot;,
+      &quot;status&quot;: &quot;active&quot;
+    },
+    {
+      &quot;id&quot;: 6129468,
+      &quot;name&quot;: &quot;Gorakhnath Chattopadhyay&quot;,
+      &quot;email&quot;: &quot;chattopadhyay_gorakhnath@kilback.example&quot;,
+      &quot;gender&quot;: &quot;female&quot;,
+      &quot;status&quot;: &quot;active&quot;
+    },
+    {
+      &quot;id&quot;: 6129467,
+      &quot;name&quot;: &quot;Kalpana Bharadwaj DDS&quot;,
+      &quot;email&quot;: &quot;kalpana_dds_bharadwaj@abernathy.test&quot;,
+      &quot;gender&quot;: &quot;female&quot;,
+      &quot;status&quot;: &quot;active&quot;
+    },
+    {
+      &quot;id&quot;: 6129464,
+      &quot;name&quot;: &quot;The Hon. Dayaanidhi Namboothiri&quot;,
+      &quot;email&quot;: &quot;dayaanidhi_hon_namboothiri_the@bernhard.test&quot;,
+      &quot;gender&quot;: &quot;female&quot;,
+      &quot;status&quot;: &quot;active&quot;
+    },
+    {
+      &quot;id&quot;: 6129462,
+      &quot;name&quot;: &quot;Kama Pillai&quot;,
+      &quot;email&quot;: &quot;kama_pillai@mcdermott-zieme.test&quot;,
+      &quot;gender&quot;: &quot;female&quot;,
+      &quot;status&quot;: &quot;active&quot;
+    }
+  ]
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print response.data[0].id</span>
+      </div>
+    </div>
+    <div class="time-cell passed">6</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.9">14:39:25.439 [print] 6129714 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print response.data[4].name</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.10">14:39:25.440 [print] Bhupati Kapoor 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:12]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:12]</span>
+                <span class="scenario-name">Get all the inactive users and users count</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>1136</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def query = {status:&#39;inactive&#39;, gender:&#39;female&#39;}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref passed">15</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &quot;https://gorest.co.in/public/v1/users&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref passed">16</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>params query</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.17">
+      <div class="step-ref passed">17</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1116</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.17">14:39:25.448 request:
+1 &gt; GET https://gorest.co.in/public/v1/users?gender=female&amp;status=inactive
+1 &gt; Host: gorest.co.in
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/17.0.9)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+14:39:26.561 response time in milliseconds: 1113
+1 &lt; 200
+1 &lt; Date: Thu, 01 Feb 2024 09:09:24 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Cache-Control: max-age=0, private, must-revalidate
+1 &lt; etag: W/&quot;8c283292a83cf31e1f204d7fc9334ed3&quot;
+1 &lt; referrer-policy: strict-origin-when-cross-origin
+1 &lt; vary: Origin
+1 &lt; x-content-type-options: nosniff
+1 &lt; x-download-options: noopen
+1 &lt; x-frame-options: SAMEORIGIN
+1 &lt; x-permitted-cross-domain-policies: none
+1 &lt; x-request-id: 36cfcd58-a460-4333-a09f-8990fceb73f3
+1 &lt; x-runtime: 0.073132
+1 &lt; x-xss-protection: 0
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=o2HwdwdCAwVGv9hqvL2KwOU33fJF2gsMiCSUvwtw7ZotiNsHKkbFrUBEcE9ruqhGuO1Ytwkk%2FTh05CF5CVhyp9BYuMHef4BphssEuxeDLpOgb9oc9GL61%2BqdLiMnTHE%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 84e90e2608f00212-CDG
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
+{&quot;meta&quot;:{&quot;pagination&quot;:{&quot;total&quot;:763,&quot;pages&quot;:77,&quot;page&quot;:1,&quot;limit&quot;:10,&quot;links&quot;:{&quot;previous&quot;:null,&quot;current&quot;:&quot;https://gorest.co.in/public/v1/users?page=1&quot;,&quot;next&quot;:&quot;https://gorest.co.in/public/v1/users?page=2&quot;}}},&quot;data&quot;:[{&quot;id&quot;:6129490,&quot;name&quot;:&quot;Adhrit Agarwal&quot;,&quot;email&quot;:&quot;agarwal_adhrit@hoeger.example&quot;,&quot;gender&quot;:&quot;female&quot;,&quot;status&quot;:&quot;inactive&quot;},{&quot;id&quot;:6129483,&quot;name&quot;:&quot;Vasudeva Bhat JD&quot;,&quot;email&quot;:&quot;bhat_jd_vasudeva@lynch.example&quot;,&quot;gender&quot;:&quot;female&quot;,&quot;status&quot;:&quot;inactive&quot;},{&quot;id&quot;:6129475,&quot;name&quot;:&quot;Bhardwaj Ahuja&quot;,&quot;email&quot;:&quot;bhardwaj_ahuja@beer-ritchie.test&quot;,&quot;gender&quot;:&quot;female&quot;,&quot;status&quot;:&quot;inactive&quot;},{&quot;id&quot;:6129474,&quot;name&quot;:&quot;Nimit Rana VM&quot;,&quot;email&quot;:&quot;vm_rana_nimit@waelchi.test&quot;,&quot;gender&quot;:&quot;female&quot;,&quot;status&quot;:&quot;inactive&quot;},{&quot;id&quot;:6129470,&quot;name&quot;:&quot;The Hon. Himadri Menon&quot;,&quot;email&quot;:&quot;himadri_the_hon_menon@friesen.example&quot;,&quot;gender&quot;:&quot;female&quot;,&quot;status&quot;:&quot;inactive&quot;},{&quot;id&quot;:6129463,&quot;name&quot;:&quot;Chandraketu Mahajan&quot;,&quot;email&quot;:&quot;chandraketu_mahajan@morissette.test&quot;,&quot;gender&quot;:&quot;female&quot;,&quot;status&quot;:&quot;inactive&quot;},{&quot;id&quot;:6129454,&quot;name&quot;:&quot;Bhoj Mishra&quot;,&quot;email&quot;:&quot;bhoj_mishra@roberts.example&quot;,&quot;gender&quot;:&quot;female&quot;,&quot;status&quot;:&quot;inactive&quot;},{&quot;id&quot;:6129453,&quot;name&quot;:&quot;Devesh Talwar&quot;,&quot;email&quot;:&quot;devesh_talwar@cole.example&quot;,&quot;gender&quot;:&quot;female&quot;,&quot;status&quot;:&quot;inactive&quot;},{&quot;id&quot;:6129449,&quot;name&quot;:&quot;Charumati Malik&quot;,&quot;email&quot;:&quot;malik_charumati@heathcote.example&quot;,&quot;gender&quot;:&quot;female&quot;,&quot;status&quot;:&quot;inactive&quot;},{&quot;id&quot;:6129448,&quot;name&quot;:&quot;Miss Satyen Malik&quot;,&quot;email&quot;:&quot;malik_miss_satyen@okuneva.test&quot;,&quot;gender&quot;:&quot;female&quot;,&quot;status&quot;:&quot;inactive&quot;}]}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.18">
+      <div class="step-ref passed">18</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.19">
+      <div class="step-ref passed">19</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def jsonresponse = response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.20">
+      <div class="step-ref passed">20</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print jsonresponse</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.20">14:39:26.565 [print] {
+  &quot;meta&quot;: {
+    &quot;pagination&quot;: {
+      &quot;total&quot;: 763,
+      &quot;pages&quot;: 77,
+      &quot;page&quot;: 1,
+      &quot;limit&quot;: 10,
+      &quot;links&quot;: {
+        &quot;previous&quot;: null,
+        &quot;current&quot;: &quot;https://gorest.co.in/public/v1/users?page=1&quot;,
+        &quot;next&quot;: &quot;https://gorest.co.in/public/v1/users?page=2&quot;
+      }
+    }
+  },
+  &quot;data&quot;: [
+    {
+      &quot;id&quot;: 6129490,
+      &quot;name&quot;: &quot;Adhrit Agarwal&quot;,
+      &quot;email&quot;: &quot;agarwal_adhrit@hoeger.example&quot;,
+      &quot;gender&quot;: &quot;female&quot;,
+      &quot;status&quot;: &quot;inactive&quot;
+    },
+    {
+      &quot;id&quot;: 6129483,
+      &quot;name&quot;: &quot;Vasudeva Bhat JD&quot;,
+      &quot;email&quot;: &quot;bhat_jd_vasudeva@lynch.example&quot;,
+      &quot;gender&quot;: &quot;female&quot;,
+      &quot;status&quot;: &quot;inactive&quot;
+    },
+    {
+      &quot;id&quot;: 6129475,
+      &quot;name&quot;: &quot;Bhardwaj Ahuja&quot;,
+      &quot;email&quot;: &quot;bhardwaj_ahuja@beer-ritchie.test&quot;,
+      &quot;gender&quot;: &quot;female&quot;,
+      &quot;status&quot;: &quot;inactive&quot;
+    },
+    {
+      &quot;id&quot;: 6129474,
+      &quot;name&quot;: &quot;Nimit Rana VM&quot;,
+      &quot;email&quot;: &quot;vm_rana_nimit@waelchi.test&quot;,
+      &quot;gender&quot;: &quot;female&quot;,
+      &quot;status&quot;: &quot;inactive&quot;
+    },
+    {
+      &quot;id&quot;: 6129470,
+      &quot;name&quot;: &quot;The Hon. Himadri Menon&quot;,
+      &quot;email&quot;: &quot;himadri_the_hon_menon@friesen.example&quot;,
+      &quot;gender&quot;: &quot;female&quot;,
+      &quot;status&quot;: &quot;inactive&quot;
+    },
+    {
+      &quot;id&quot;: 6129463,
+      &quot;name&quot;: &quot;Chandraketu Mahajan&quot;,
+      &quot;email&quot;: &quot;chandraketu_mahajan@morissette.test&quot;,
+      &quot;gender&quot;: &quot;female&quot;,
+      &quot;status&quot;: &quot;inactive&quot;
+    },
+    {
+      &quot;id&quot;: 6129454,
+      &quot;name&quot;: &quot;Bhoj Mishra&quot;,
+      &quot;email&quot;: &quot;bhoj_mishra@roberts.example&quot;,
+      &quot;gender&quot;: &quot;female&quot;,
+      &quot;status&quot;: &quot;inactive&quot;
+    },
+    {
+      &quot;id&quot;: 6129453,
+      &quot;name&quot;: &quot;Devesh Talwar&quot;,
+      &quot;email&quot;: &quot;devesh_talwar@cole.example&quot;,
+      &quot;gender&quot;: &quot;female&quot;,
+      &quot;status&quot;: &quot;inactive&quot;
+    },
+    {
+      &quot;id&quot;: 6129449,
+      &quot;name&quot;: &quot;Charumati Malik&quot;,
+      &quot;email&quot;: &quot;malik_charumati@heathcote.example&quot;,
+      &quot;gender&quot;: &quot;female&quot;,
+      &quot;status&quot;: &quot;inactive&quot;
+    },
+    {
+      &quot;id&quot;: 6129448,
+      &quot;name&quot;: &quot;Miss Satyen Malik&quot;,
+      &quot;email&quot;: &quot;malik_miss_satyen@okuneva.test&quot;,
+      &quot;gender&quot;: &quot;female&quot;,
+      &quot;status&quot;: &quot;inactive&quot;
+    }
+  ]
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.21">
+      <div class="step-ref passed">21</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print jsonresponse.data[0].id</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.21">14:39:26.567 [print] 6129490 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.22">
+      <div class="step-ref passed">22</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print jsonresponse.data[4].name</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.22">14:39:26.569 [print] The Hon. Himadri Menon 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.23">
+      <div class="step-ref passed">23</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def usercount = jsonresponse.data.length</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.24">
+      <div class="step-ref passed">24</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print usercount</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.24">14:39:26.572 [print] 10 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.25">
+      <div class="step-ref passed">25</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match usercount == 10</span>
+      </div>
+    </div>
+    <div class="time-cell passed">10</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
